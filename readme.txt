@@ -9,4 +9,4 @@ will be consequences.
 
 Anuj - Jscrip, Html, CSS, php
 
-riley- learn to use photoshop
+Riley- learn to use photoshop
