@@ -7,7 +7,21 @@
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="/css/vegas/vegas.min.css">
          <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+        <style>
+            .email{
+                border: 5px solid red;
+            }.err{
+                color: red;
+                position: absolute;
+                top: 70%;
+                left: 3%;
+            }.password{
+                border: 5px solid red;
+            }
         
+        
+        
+        </style>
         <title>CodeWeb</title>
     </head>
     <body>
@@ -58,6 +72,7 @@
                 </div>
                 <div class="info-4">
                     <div class="img-4"></div>
+                
                 </div>
                 <div class="box" id="box">
                     <p class="sign-up-text">Sign-Up</p>
@@ -72,8 +87,9 @@
                 <div class="sign-in-form" id="box-2">
                     <p class="_text">Sign-In</p>
                     <form action="login.php" name="sign-in" method="post">
-                    <input type="text" placeholder="Email" name = "EMAIL" class="email" required >
-                    <input type="password" placeholder="Password" name="PASS" class="password" required>
+                        <p class="err">Incorrect email or password</p>
+                    <input type="text" placeholder="Email" class="email" name = "EMAIL" required >
+                    <input type="password" placeholder="Password" class="password" name="PASS" required>
                     <input type="submit" placeholder="Sign In" class="submit-2">
                     </form>
                 </div>

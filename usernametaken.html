@@ -7,6 +7,14 @@
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="/css/vegas/vegas.min.css">
          <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+        <style>
+            #username{
+                border: 5px solid #ff0033;
+            }#username:focus{
+                border: 5px solid rgb(0, 0, 0);
+            }
+        
+        </style>
         
         <title>CodeWeb</title>
     </head>
@@ -15,7 +23,7 @@
             <div class="cW-logo"></div>
             <p class="codeweb">CodeWeb</p>
             <a href="#box" class="smoothScroll"><button class="sign-up">Sign Up!</button></a>
-            <a href="#box-2" class="smoothScroll"><button class="sign-in">Sign-In!</button></a>
+            <a href="#box-2"><button class="sign-in">Sign-In!</button></a>
             <p class="cta">Share, edit and create code online with CodeWeb</p>
             <div class="bottom" id="bottom">
                 <div class="grey-1">
@@ -58,12 +66,13 @@
                 </div>
                 <div class="info-4">
                     <div class="img-4"></div>
+                
                 </div>
                 <div class="box" id="box">
                     <p class="sign-up-text">Sign-Up</p>
                     <form class="form" action="register.php" method="post" name="sign-up" onsubmit="return registerSubmit()">
                         <input type="text" placeholder="email" class="email-input" name="email" required id="email">
-                        <input type="text" placeholder="username" class="username" name="username" required id="username"> 
+                        <input type="text" placeholder="Username is taken" class="username" name="username" id="username" required> 
                         <input type="password" placeholder="password" class="password-input" name="password" required>
                         <input type="submit" placeholder="Sign Up" class="submit">
                 
@@ -72,9 +81,9 @@
                 <div class="sign-in-form" id="box-2">
                     <p class="_text">Sign-In</p>
                     <form action="login.php" name="sign-in" method="post">
-                    <input type="text" placeholder="Email" name = "EMAIL" class="email" required >
-                    <input type="password" placeholder="Password" name="PASS" class="password" required>
-                    <input type="submit" placeholder="Sign In" class="submit-2">
+                    <input type="text" placeholder="Username or Email" class="email" required>
+                    <input type="password" placeholder="Password" class="password" required>
+                    <input type="submit" placeholder="Sign Up" class="submit-2">
                     </form>
                 </div>
                 
@@ -89,6 +98,7 @@
         <script async type="text/javascript" src="js/jquery-min.js" ></script>   
         <script src="/js/vegas/vegas.min.js"></script>   
         <script type="text/javascript"></script>
+        
 </body>
 
 </html>
