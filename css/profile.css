@@ -1,0 +1,102 @@
+body{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    overflow-x: hidden;
+        font: 300 1.5em/1.38 'Open Sans';
+    color: rgb(255, 255, 255);
+    position: static;
+}
+.profilename{
+    position: absolute;
+    left: 3%;
+    font-size: 18px;
+    width: 50%;
+    text-align: center;
+}
+.banner{
+    position: absolute;
+    left: 0%;
+    height: 10%;
+    background-color: #69D2E7;
+    top: 0%;
+    width: 100%;
+    border-bottom: 8px solid #A7DBD8;
+}
+.logout{
+    position: absolute;
+    right: 20%;
+    font-size: 16px;
+    right: 1%;
+    top: 30%;
+}
+.profilePic{
+    position: absolute;
+    left: 50%;
+    height: 60%;
+    width: 20.5%;
+    background: url('../images/default-p-pic.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 15%;
+    border: 5px solid #A7DBD8;
+}
+.userinf{
+    position: absolute;
+    height: 100%;
+    width: 15%;
+    left: 0%;
+    top: 0%;
+    border-right: 8px solid #A7DBD8;
+}
+.gear{
+    position: absolute;
+    right: 4%;
+    height: 50%;
+    width: 4%;
+    top: 25%;
+    background: url('../images/settings.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}.gear:hover{
+    cursor: pointer;
+      background: url('../images/gearhover.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.settings{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    visibility: hidden;
+}
+.close{
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    font-size: 20px;
+    height: 2%;
+    width: 2%;
+    color: black;
+}
+.close:hover{
+    cursor: pointer;
+}
+.plus{
+    position: absolute;
+    height: 80%;
+    width: 15%;
+    background: url('../images/plus.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: 20%;
+    top: 10%;
+}
+.plus:hover{
+     background: url('../images/plus-hover.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
